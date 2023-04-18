@@ -8,38 +8,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap');
-*{
+
+* {
     box-sizing: border-box;
     margin: 0;
     list-style: none;
     font-family: 'Manrope', sans-serif;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
-body{
-    background-color:#0f0f0f;
+body {
+    background-color: #0f0f0f;
 }
-.achicar{
+
+.achicar {
     color: #c0e0deff;
     font-size: 12px;
     line-height: 1px;
     text-shadow: none;
 }
 
-.resaltar{
+.resaltar {
     font-family: 'Manrope' sans-serif;
     color: #4682B4;
     font-size: 40px;
     text-shadow: #162521ff 1px 1px 3px;
 }
 
-.cambiarcolor{
-    color:#4682B4;
+.cambiarcolor {
+    color: #4682B4;
     font-weight: 500;
 }
-.container{
+
+.container {
     max-width: 1400px;
     margin: auto;
 }
@@ -49,20 +53,21 @@ header {
     width: 100%;
     z-index: 998;
 }
-header .container{
-    background-image: linear-gradient(to right,#1f415e,#4682B4);
+
+header .container {
+    background-image: linear-gradient(to right, #1f415e, #4682B4);
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-items: center;
-} 
-
-header .logo{
-display: flex;
-justify-content: center;
 }
 
-header .logo h1{
+header .logo {
+    display: flex;
+    justify-content: center;
+}
+
+header .logo h1 {
     margin-left: 5px;
     margin-top: 30px;
     padding-bottom: 5px;
@@ -72,23 +77,23 @@ header .logo h1{
 }
 
 
-header .logo img{
+header .logo img {
     margin-top: 5px;
     width: 70px;
     align-items: center center;
 }
 
-header nav{
-    background-color: #162521ff;  
+header nav {
+    background-color: #162521ff;
     display: flex;
     flex-direction: row;
     text-align: center;
     padding-bottom: 5px;
     justify-content: center;
-      
+
 }
 
-header nav a{
+header nav a {
     font-family: 'Nunito';
     font-size: 12px;
     margin: 8px;
@@ -96,38 +101,38 @@ header nav a{
     color: #fff;
 }
 
-header nav a:active{
+header nav a:active {
     color: #4682B4;
 }
-header nav a:hover{
-    color:#4682B4;
-    text-decoration:overline;
+
+header nav a:hover {
+    color: #4682B4;
+    text-decoration: overline;
 }
 
 #hero {
-    
+
     max-width: 1400px;
     margin: auto;
     height: 100vh;
-    background-image: linear-gradient(0deg,rgba(49, 60, 110, 0.6)
-     ,rgba(0, 1, 32, 0.5)),
-     url("../media/hero.png");
-    background-size: cover ;
+    background-image: linear-gradient(0deg, rgba(49, 60, 110, 0.6), rgba(0, 1, 32, 0.5)),
+        url("../media/hero.png");
+    background-size: cover;
     background-position: center;
     background-repeat: repeat;
     padding: 10px 10px;
-    display: flex; 
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;  
+    text-align: center;
 
 }
 
-#hero h1{
-    margin-top:320px;
+#hero h1 {
+    margin-top: 320px;
     justify-items: center;
-    font-size:55px;
+    font-size: 55px;
     color: #fff;
     align-items: center;
     line-height: 40px;
@@ -135,32 +140,32 @@ header nav a:hover{
     text-shadow: #000 1px 1px 5px;
 }
 
-#hero h2{
-color: #c0e0deff;
+#hero h2 {
+    color: #c0e0deff;
 }
 
-#hero p{
+#hero p {
     margin-top: 230px;
-    color:#c0e0deff;
+    color: #c0e0deff;
     font-size: 50px;
-    
+
 }
 
-#quienes-somos{
- max-width: 1400px;
- height:max-content;
- margin:auto;
+#quienes-somos {
+    max-width: 1400px;
+    height: max-content;
+    margin: auto;
 }
 
-#quienes-somos .container{
+#quienes-somos .container {
     max-width: 1400px;
     margin: auto;
     display: flex;
-    justify-content:center;
+    justify-content: center;
 }
 
 
-.titulo-quienes-somos{
+.titulo-quienes-somos {
     background-color: #f8f8f8;
     padding-top: 40px;
     padding: 15px;
@@ -169,75 +174,78 @@ color: #c0e0deff;
     font-size: 12px;
 }
 
-.titulo-quienes-somos h1{
+.titulo-quienes-somos h1 {
     font-size: 20px;
     padding-top: 90px;
     margin-bottom: 30px;
 }
-.texto1-quienes-somos{
-    background-image: linear-gradient(to right,#1f415e,#4682B4);
-    color:#ffffff;
+
+.texto1-quienes-somos {
+    background-image: linear-gradient(to right, #1f415e, #4682B4);
+    color: #ffffff;
     padding: 20px;
     padding-bottom: 20px;
     text-align: justify;
 }
-.texto1-quienes-somos p{
+
+.texto1-quienes-somos p {
     font-size: 15px;
     font-family: 'Nunito', sans-serif;
+    padding: 5px 20px 5px 20px;
 }
 
-.texto1-quienes-somos h2{
+.texto1-quienes-somos h2 {
     font-family: 'Nunito', sans-serif;
-    padding: 20px;
+    padding: 15px;
     font-size: 30px;
-    text-align: center;
     color: #ffffff;
-    text-shadow:#000000 1px 1px 3px;
+    text-shadow: #000000 1px 1px 3px;
 }
 
-.texto2-quienes-somos{
+.texto2-quienes-somos {
     background-color: #f8f8f8;
     padding: 20px;
     padding-bottom: 20px;
     text-align: justify;
 }
 
-.texto2-quienes-somos p{
+.texto2-quienes-somos p {
     font-family: 'Nunito', sans-serif;
     font-size: 15px;
+    padding: 5px 20px 5px 20px;
     margin-bottom: 40px;
 }
-.texto2-quienes-somos h2{
-    padding: 20px;
+
+.texto2-quienes-somos h2 {
+    padding: 15px;
     font-size: 30px;
     color: #4682B4;
-    text-align: center;
     text-shadow: #000000 1px 1px 3px;
 }
-.imagen-quienes-somos{
-    height:180px;
+
+.imagen-quienes-somos {
+    height: 180px;
     width: 100%;
     margin: 0;
-    background-image: linear-gradient(0deg,rgba(22, 30, 66, 0.6)
-    ,rgba(0, 1, 32, 0.5)),
-    url("../media/quienes-somos-imagen.jpg");
-    background-size: cover ;
+    background-image: linear-gradient(0deg, rgba(22, 30, 66, 0.6), rgba(0, 1, 32, 0.5)),
+        url("../media/quienes-somos-imagen.jpg");
+    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
 
-#servicios{
+#servicios {
     max-width: 1400px;
+    text-align: center;
     margin: auto;
     height: max-content;
-    background-image: linear-gradient(0deg,rgba(0, 1, 3, 0.4)
-    ,rgba(107, 146, 219, 0.6)), url(../media/serviciosBack.jpeg);
+    background-image: linear-gradient(0deg, rgba(0, 1, 3, 0.4), rgba(107, 146, 219, 0.6)), url(../media/serviciosBack.jpeg);
     display: flex;
     background-size: cover;
     background-position: center;
 }
 
-#servicios .titulo-servicios{
+#servicios .titulo-servicios {
     color: #fff;
     font-family: 'Manrope', sans-serif;
     font-size: 25px;
@@ -246,48 +254,80 @@ color: #c0e0deff;
     padding: 15px;
     margin-top: 90px;
 }
-#servicios .container .servicios-hys{
-    background-color: hsla(164, 25%, 12%, 0.715);
-    color: #ffffff;
-    text-align: justify;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 10px;  
-    box-shadow: #0f0f0f  0 2px 3px;
-}
 
-#servicios .container .servicios-ma{
+#servicios .container .servicios-hys {
     background-color: hsla(164, 25%, 12%, 0.715);
     color: #ffffff;
     text-align: justify;
     padding: 15px;
-    margin: 10px;
+    margin: 20px;
     border-radius: 10px;
-    box-shadow: #0f0f0f  0 2px;
+    box-shadow: #0f0f0f 0 2px 3px;
 }
 
-#servicios .container .servicios-cp{
+#servicios .container .servicios-ma {
     background-color: hsla(164, 25%, 12%, 0.715);
     color: #ffffff;
     text-align: justify;
     padding: 15px;
-    margin: 10px;
+    margin: 20px;
     border-radius: 10px;
-    box-shadow: #0f0f0f  0 2px;
+    box-shadow: #0f0f0f 0 2px;
+}
+
+#servicios .container .servicios-cp {
+    background-color: hsla(164, 25%, 12%, 0.715);
+    color: #ffffff;
+    text-align: justify;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: #0f0f0f 0 2px;
 
 }
 
-#servicios .container .servicios-hys > p,fieldset{
+#servicios .container .servicios-hys>p,
+fieldset {
     font-family: 'Nunito';
     padding: 15px;
 }
 
-#servicios .container .servicios-ma > p,fieldset{
+#servicios .container .servicios-ma>p,
+fieldset {
     font-family: 'Nunito';
     padding: 15px;
 }
 
-#servicios .container .servicios-cp > p,fieldset{
+#servicios .container .servicios-cp>p,
+fieldset {
     font-family: 'Nunito';
     padding: 15px;
+}
+
+#equipo {
+    max-width: 1400px;
+    margin: auto;
+}
+
+#equipo.container {
+    display: flex;
+    margin: auto;
+    padding: 15px;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#equipo .cards img {
+    width: 300px;
+}
+
+#equipo .cards .imagen-perfil1,
+.imagen-perfil2,
+.imagen-perfil3,
+.imagen-perfil4 {
+    height: 300px;
+    object-fit: none;
+    overflow: hidden;
+    justify-content: center;
+    gap: 15px;
 }
