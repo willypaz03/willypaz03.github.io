@@ -245,17 +245,17 @@ header nav a:hover {
     background-position: center;
 }
 
-#servicios .titulo-servicios {
+#servicios .titulo-seccion h1{
     color: #fff;
-    font-family: 'Manrope', sans-serif;
-    font-size: 25px;
+    font-size: 45px;
+    font-family: 'Nunito',sans-serif;
     text-shadow: 1px 1px 3px #000;
     text-align: center;
     padding: 15px;
     margin-top: 90px;
 }
 
-#servicios .container .servicios-hys {
+#servicios .card-servicio {
     background-color: hsla(164, 25%, 12%, 0.715);
     color: #ffffff;
     text-align: justify;
@@ -265,69 +265,93 @@ header nav a:hover {
     box-shadow: #0f0f0f 0 2px 3px;
 }
 
-#servicios .container .servicios-ma {
-    background-color: hsla(164, 25%, 12%, 0.715);
-    color: #ffffff;
-    text-align: justify;
-    padding: 15px;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: #0f0f0f 0 2px;
-}
 
-#servicios .container .servicios-cp {
-    background-color: hsla(164, 25%, 12%, 0.715);
-    color: #ffffff;
-    text-align: justify;
-    padding: 15px;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: #0f0f0f 0 2px;
-
-}
-
-#servicios .container .servicios-hys>p,
+#servicios .container .card-servicio> p,
 fieldset {
     font-family: 'Nunito';
     padding: 15px;
 }
 
-#servicios .container .servicios-ma>p,
-fieldset {
-    font-family: 'Nunito';
-    padding: 15px;
-}
-
-#servicios .container .servicios-cp>p,
-fieldset {
-    font-family: 'Nunito';
-    padding: 15px;
-}
+/* Seccion equipo*/
 
 #equipo {
     max-width: 1400px;
-    margin: auto;
-}
-
-#equipo.container {
     display: flex;
-    margin: auto;
+    flex-direction: column;
+    margin:auto;
+    padding: 0;
+    background-color: #f8f8f8;
+    height: max-content;
+    text-align: center;
+}
+
+
+#equipo .titulo-seccion{
+    color:#162521ff;
+    font-family: 'Manrope', sans-serif;
+    font-size: 25px;
+    text-shadow: 1px 1px 3px #000;
+    text-align: center;
     padding: 15px;
-    justify-content: center;
+    margin-top: 90px;
+}
+
+ #equipo .cards {
+    display: flex;
+    flex-direction: column;
+ }
+#equipo .card-perfil{
+    height: 400px;
+    margin: 20px;
+    box-shadow: 5px 5px 10px #000;
     overflow: hidden;
 }
 
-#equipo .cards img {
+#equipo img{
+    height: 400px;
     width: 300px;
+    border-radius: 5px;
 }
 
-#equipo .cards .imagen-perfil1,
-.imagen-perfil2,
-.imagen-perfil3,
-.imagen-perfil4 {
-    height: 300px;
-    object-fit: none;
-    overflow: hidden;
-    justify-content: center;
-    gap: 15px;
+#equipo .texto-perfil{
+    height:120px;
+    width: 300px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: relative;
+    bottom:140px;
+    background: hsla(208, 50%, 25%, 0.75);
+    color:#fff;
+    
 }
+
+#equipo .texto-perfil h1{
+    margin: 5px;
+    font-family: 'Manrope',sans-serif;
+    font-size: 30px;
+    text-shadow: 1px 1px 3px #000;
+}
+
+#equipo .texto-perfil p{
+    font-family: 'Nunito',sans-serif;
+    font-size: 18px;
+    margin: 5px;
+    /*visibility: hidden;*/
+    /*opacity: 0;*/
+
+}
+/*
+#equipo .card-perfil:hover{
+    cursor: pointer;
+}
+
+#equipo .card-perfil:hover .texto-perfil{
+    height: 120px;
+    bottom: 140px;
+}
+
+#equipo .card-perfil:hover p{
+    visibility: visible;
+    opacity: 1;
+}
+*/
