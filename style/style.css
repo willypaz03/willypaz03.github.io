@@ -66,6 +66,10 @@ header .logo {
     justify-content: center;
 }
 
+header a {
+    text-decoration: none;
+}
+
 header .logo h1 {
     margin-left: 5px;
     margin-top: 30px;
@@ -291,6 +295,10 @@ fieldset {
     padding: 15px;
     border-radius: 15px;
 }
+#servicios .card-servicio p{
+    padding: 25px;
+    font-size: 15px;
+}
 
 /* Seccion equipo-------------------------------------------------------------------------------*/
 
@@ -318,13 +326,21 @@ fieldset {
     margin-top: 90px;
 }
 
+#equipo .texto-equipo {
+    padding: 20px;
+}
+
 #equipo .cards {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    width: 100%;
+    width: auto;
+    padding: 20px;
 }
 
 #equipo .card-perfil {
+    max-width: 300px;
     height: 400px;
     margin: 20px;
     box-shadow: 5px 5px 20px #000;
@@ -613,8 +629,13 @@ footer h3 {
     }
 
     #servicios .card-servicio {
-        font-size: 20px;
+        font-size: 18px;
     }
+    #servicios .card-servicio p{
+        padding: 25px;
+        font-size: 16px;
+    }
+
 
     #servicios .card-servicio h2 {
         font-size: 45px;
@@ -629,7 +650,7 @@ footer h3 {
         justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
-        padding-bottom: 30px;
+        padding-bottom: 35px;
     }
 
     #equipo .card-perfil {
@@ -638,9 +659,10 @@ footer h3 {
     }
 
     /* seccion contacto----------------------------------------------------*/
-    #contacto{
+    #contacto {
         padding-bottom: 40;
     }
+
     #contacto .titulo-seccion h1 {
         font-size: 70px;
     }
@@ -726,29 +748,38 @@ footer h3 {
     #equipo {
         padding-bottom: 45px;
     }
+    #equipo .texto-equipo{
+        font-size: 22px;
+    }
 
     /*seccion contacto--------------------------------------------------------------*/
-    #contacto .container{
+    #contacto .container {
         width: 85%;
-        justify-content:space-between ;
+        justify-content: space-between;
         padding-bottom: 50px;
     }
+
     #contacto .formulario {
         margin-left: 40px;
         width: 45%;
     }
-    #contacto .informacion{
+
+    #contacto .informacion {
         width: 55%;
-        padding-left:70px;
+        padding-left: 70px;
         padding-top: 10px;
     }
-    #contacto .informacion h2{
+
+    #contacto .informacion h2 {
         font-size: 50px;
     }
-    #contacto .informacion p{
+
+    #contacto .informacion p {
         font-size: 25px;
     }
-    #contacto .informacion i,a{
+
+    #contacto .informacion i,
+    a {
         font-size: 30px;
     }
 }

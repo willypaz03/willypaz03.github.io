@@ -18,7 +18,13 @@ sr.reveal(".titulo-seccion > h1",{
     distance: "-100px",
 });
 
-sr.reveal("#hero >h1,h2",{
+sr.reveal("#hero >h1",{
+    duration: 3000,
+    origin: "top",
+    distance: "-200px",
+} )
+
+sr.reveal("#hero >h2",{
     duration: 3000,
     origin: "top",
     distance: "-200px",
