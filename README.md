@@ -8,7 +8,7 @@ Profesor del curso:
 Arroyo, Carlos
 
 Grupo integrado por:
-* Alvarado, Triana
+* Alvarado, Triana(dejo el curso a mitad del tp)
 * Coste, Darío
 * Gavilán, Rolando
 * Paz, Wilfredo.
