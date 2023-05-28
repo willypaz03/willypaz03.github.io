@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="/style/style.css">
     <link rel="shortcut icon" href="media/logochico.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/8bcc728a80.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -130,7 +130,7 @@
                     <img src="media/perfil1.jpg" alt="Foto-perfil 1">
                     <div class="texto-perfil">
                         <h1>Rolando Gavilán</h1>
-                        <p>Gerente de marketing y encargado  de recursos humanos</p>
+                        <p>Gerente de marketing y encargado del sector de recursos humanos</p>
                     </div>
                 </div>
                 <div class="card-perfil">
@@ -151,7 +151,7 @@
                     <img src="media/perfil4.jpeg" alt="Foto-perfil 4">
                     <div class="texto-perfil">
                         <h1>Triana Alvarado</h1>
-                        <p>Licenciada en Higiene y seguridad.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                     </div>
                 </div>
 
@@ -165,30 +165,51 @@
         </div>
         <div class="container">
             <div class="formulario">
-                <form action="" method="">
+                <form action="/send.php" class="formulario" method=post id="formulario">
                     <fieldset>
                         <legend>
                             Formulario de contacto:
                         </legend>
-                        <div class="column1">
-                            <label for="Name" class="label">Nombre y Apellido:</label>
+                            <div class="formulario__grupo" id="grupo__Names">
+                                <label for="Names" class="formulario__label">Nombre y Apellido:</label>
+                                <div class="formulario__grupo-input">
+                                    <input type="text" class="formulario__input" id="Names" name="Names"  required tabindex="1">
+                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                </div>
+                                <p class="formulario__input-error">Nombre invalido. Solo se permiten letras.</p>
+                            </div>
                             <br>
-                            <input type="text" id="Name" name="Name" required tabindex="1">
+                            <div class="formulario__grupo" id="grupo__cuitNum">
+                                <label for="cuitNum">N° de CUIT:</label>
+                                    <br>
+                                    <div class="formulario__grupo-input">
+                                        <input type="text" id="cuitNum" name="cuitNum" class="forminput" maxlength="11" required tabindex="3" >
+                                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                    </div>
+                                    <p class="formulario__input-error">CUIT invalido. El CUIT contiene 11 digitos</p>
+                                </div>
+                                <br>
+                            <div class="formulario__grupo" id="grupo__correo">
+                                <label for="e-mail">E-mail:</label>
+                                <br>
+                                <div class="formulario__grupo-input">
+                                    <input type="email" id="correo" name="correo" class="forminput" required tabindex="4">
+                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                </div>
+                                <p class="formulario__input-error">Dirección de e-mail invalida.</p>
+                            </div>
                             <br>
-                            <label for="cuitNum">N° de CUIT:</label>
+                            <div class="formulario__grupo" id="grupo__phoneNum">
+                                <label for="phoneNum">Teléfono:</label>
+                                <br>
+                                <div class="formulario__grupo-input">
+                                    <input type="tel" name="phoneNum" id="phoneNum   required tabindex="5"
+                                    placeholder="(Código de área) Número">
+                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                </div>
+                                <p class="formulario__input-error">Teléfono invalido</p>
+                            </div>    
                             <br>
-                            <input type="number" id="cuitNum" name="cuitNum" maxlength="11" required tabindex="3">
-                            <br>
-                            <label for="e-mail">E-mail:</label>
-                            <br>
-                            <input type="email" id="e-mail" name="e-mail" required tabindex="4">
-                            <br>
-                            <label for="phoneNum">Teléfono:</label>
-                            <br>
-                            <input type="tel" id="phoneNum name=" phoneNum required tabindex="5">
-                            <br>
-                        </div>
-                        <div class=column2>
                             <label for="consulta">Mensaje:</label>
                             <br>
                             <textarea name="consulta" id="consulta" cols="40" rows="5"
@@ -196,7 +217,9 @@
                             <br>
                             <input type="submit" value="Enviar" tabindex="9" id="submit">
                             <br>
-                        </div>
+                            <div class="formulario__mensaje" id="formulario__submit-error">
+                                <p><i class="fas fa-exclamation-triangle" ></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                            </div>
                     </fieldset>
                 </form>
             </div>
