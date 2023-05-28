@@ -467,7 +467,7 @@ fieldset {
     color: #c0e0deff;
     border: none;
     width: 100%;
-    background-color: hsla(0, 0%, 100%, 0.116);
+    background-color: hsla(194, 78%, 53%, 0.116);
     padding: 7px;
     margin: 2px;
     border-radius: 10px;
@@ -487,6 +487,7 @@ fieldset {
     color: #000;
     box-shadow: 3px #000;
     border-bottom: 1px solid #162521ff;
+    cursor: pointer;
 }
 
 #contacto .informacion {
@@ -759,10 +760,12 @@ footer h3 {
         padding-bottom: 50px;
     }
 
-    #contacto .formulario {
-        margin-left: 40px;
+    /*Este width hacia que el formulario con la ventana maximizada se colapse*/
+
+    /* #contacto .formulario {   
+        margin-left: 40px;         
         width: 45%;
-    }
+    } */
 
     #contacto .informacion {
         width: 55%;
@@ -782,4 +785,38 @@ footer h3 {
     a {
         font-size: 30px;
     }
+
+    /*validacion*/
+    .formulario__grupo-correcto .formulario__validacion-estado {
+        color: #1ed12d;
+        opacity: 1;
+    }
+    
+    .formulario__grupo-incorrecto .formulario__label {
+        color: #bb2929;
+    }
+    
+    .formulario__grupo-incorrecto .formulario__validacion-estado {
+        color: #bb2929;
+        opacity: 1;
+    }
+    
+    .formulario__grupo-incorrecto .formulario__input {
+        border: 3px solid #bb2929;
+    }
+
+    .formulario__input-error  {
+        display: none;
+
+    }
+
+    #formulario__submit-error {
+        display: none;
+    }
+
+    .formulario__input-error-activo {
+        display:block
+    }
+    
+
 }
