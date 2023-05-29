@@ -579,7 +579,7 @@ footer h3 {
     left: 2px;
     z-index: 1000;
     margin-left: 10px;
-    margin-top: 100px;
+    margin-top: 105px;
     border: 3;
     text-align: center;
     color: #fff;
@@ -955,5 +955,12 @@ footer h3 {
         display: block
     }
 
-
+.containerw{
+    margin-left: 40px;
+}
+}
+@media (min-width: 1500px) {
+    .containerw{
+        margin-left: 120px;
+    }
 }
