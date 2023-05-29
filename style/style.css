@@ -434,7 +434,7 @@ fieldset {
 
 }
 
-#contacto .formulario {
+#contacto .formulario1 {
     margin: 25px;
     color: #fff;
     margin: 20px;
@@ -443,13 +443,13 @@ fieldset {
     box-shadow: 5px 5px 20px #000;
 }
 
-#contacto .formulario form {
+#contacto .formulario1 form {
     margin-top: 10px;
     padding: 5px;
     justify-content: center;
 }
 
-#contacto .formulario fieldset {
+#contacto .formulario1 fieldset {
     font-size: 13px;
     font-family: 'Manrope', sans-serif;
     text-shadow: 2px 2px 4px #000;
@@ -459,7 +459,7 @@ fieldset {
     border-radius: 15px;
 }
 
-#contacto .formulario fieldset legend {
+#contacto .formulario1 fieldset legend {
     font-size: 20px;
 
 }
@@ -742,7 +742,7 @@ footer h3 {
         flex-wrap: nowrap;
     }
 
-    #contacto .formulario {
+    #contacto .formulario1 {
         margin: 10px;
     }
 
@@ -899,10 +899,11 @@ footer h3 {
 
     /*Este width hacia que el formulario con la ventana maximizada se colapse*/
 
-    /*#contacto .formulario {   
+    #contacto .formulario1 {   
         margin-left: 40px;         
         width: 45%;
-    } */
+    } 
+   
 
     #contacto .informacion {
         width: 55%;
