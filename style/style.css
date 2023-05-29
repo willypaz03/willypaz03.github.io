@@ -295,7 +295,8 @@ fieldset {
     padding: 15px;
     border-radius: 15px;
 }
-#servicios .card-servicio p{
+
+#servicios .card-servicio p {
     padding: 25px;
     font-size: 15px;
 }
@@ -536,8 +537,9 @@ footer h3 {
     text-align: center;
     padding: 35px;
 }
- /*validacion*/
- .formulario__grupo-correcto .formulario__validacion-estado {
+
+/*validacion*/
+.formulario__grupo-correcto .formulario__validacion-estado {
     color: #1ed12d;
     opacity: 1;
 }
@@ -555,7 +557,7 @@ footer h3 {
     border: 3px solid #bb2929;
 }
 
-.formulario__input-error  {
+.formulario__input-error {
     display: none;
 
 }
@@ -565,9 +567,44 @@ footer h3 {
 }
 
 .formulario__input-error-activo {
-    display:block
+    display: block
 }
 
+/* estilos del widget de clima */
+
+.containerw {
+    height: max-content;
+    width: max-content;
+    opacity: 0.90;
+    left: 2px;
+    z-index: 1000;
+    margin-left: 10px;
+    margin-top: 100px;
+    border: 3;
+    text-align: center;
+    color: #fff;
+    background-color: #162521ff;
+    padding: 8px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.563);
+    border-radius: 10px;
+    position: fixed;
+
+
+}
+
+.temp {
+    font-size: 15px;
+    color: #c0e0deff;
+}
+
+.summary {
+    font-size: 8px;
+    font-style: italic;
+}
+
+.loc {
+    font-size: 8px;
+}
 
 @media (min-width:700px) {
 
@@ -664,7 +701,8 @@ footer h3 {
     #servicios .card-servicio {
         font-size: 18px;
     }
-    #servicios .card-servicio p{
+
+    #servicios .card-servicio p {
         padding: 25px;
         font-size: 16px;
     }
@@ -728,26 +766,26 @@ footer h3 {
         font-size: 25px;
     }
 
-     /*validacion*/
-     .formulario__grupo-correcto .formulario__validacion-estado {
+    /*validacion*/
+    .formulario__grupo-correcto .formulario__validacion-estado {
         color: #1ed12d;
         opacity: 1;
     }
-    
+
     .formulario__grupo-incorrecto .formulario__label {
         color: #bb2929;
     }
-    
+
     .formulario__grupo-incorrecto .formulario__validacion-estado {
         color: #bb2929;
         opacity: 1;
     }
-    
+
     .formulario__grupo-incorrecto .formulario__input {
         border: 3px solid #bb2929;
     }
 
-    .formulario__input-error  {
+    .formulario__input-error {
         display: none;
 
     }
@@ -757,9 +795,41 @@ footer h3 {
     }
 
     .formulario__input-error-activo {
-        display:block
+        display: block
     }
-    
+
+    .containerw {
+        height: max-content;
+        width: max-content;
+        opacity: 0.90;
+        left: 2px;
+        z-index: 1000;
+        margin-left: 10px;
+        margin-top: 185px;
+        color:#fff;
+        text-align: center;
+        background-color: #162521ff;
+        padding: 8px;
+        box-shadow: 5px 5px 20px  rgba(0, 0, 0, 0.51);
+        border-radius: 10px;
+        position: fixed;
+
+
+    }
+
+    .temp {
+        font-size: 20px;
+        color: #c0e0deff;
+    }
+
+    .summary {
+        font-size: 10px;
+        font-style: italic;
+    }
+
+    .loc {
+        font-size: 10px;
+    }
 
 }
 
@@ -815,7 +885,8 @@ footer h3 {
     #equipo {
         padding-bottom: 45px;
     }
-    #equipo .texto-equipo{
+
+    #equipo .texto-equipo {
         font-size: 22px;
     }
 
@@ -857,21 +928,21 @@ footer h3 {
         color: #1ed12d;
         opacity: 1;
     }
-    
+
     .formulario__grupo-incorrecto .formulario__label {
         color: #bb2929;
     }
-    
+
     .formulario__grupo-incorrecto .formulario__validacion-estado {
         color: #bb2929;
         opacity: 1;
     }
-    
+
     .formulario__grupo-incorrecto .formulario__input {
         border: 3px solid #bb2929;
     }
 
-    .formulario__input-error  {
+    .formulario__input-error {
         display: none;
 
     }
@@ -881,8 +952,8 @@ footer h3 {
     }
 
     .formulario__input-error-activo {
-        display:block
+        display: block
     }
-    
+
 
 }
