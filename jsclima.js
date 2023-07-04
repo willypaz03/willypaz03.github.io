@@ -9,18 +9,18 @@ const kelvin= 273.15
 window.addEventListener("load", () => {
 
 
-    if (navigator.geolocation){
+    // if (navigator.geolocation){
 
 
-    navigator.geolocation.getCurrentPosition((position) => {
+    // navigator.geolocation.getCurrentPosition((position) => {
 
-            console.log(position);
-            lon = position.coords.longitude;
-            lat = position.coords.latitude;})
+    //         console.log(position);
+    //         lon = position.coords.longitude;
+    //         lat = position.coords.latitude;})
 
         const api_id = "8e9845fe25d648672c7eb59d5e3f6cb2";
 
-        const url_base ='https://api.openweathermap.org/data/2.5/weather?id=3435910&lang=sp,es&appid=8e9845fe25d648672c7eb59d5e3f6cb2'
+        const url_base ='https://api.openweathermap.org/data/2.5/weather?id=3435910&appid=8e9845fe25d648672c7eb59d5e3f6cb2&lang=sp,es'
 
 
         fetch(url_base)
@@ -43,4 +43,4 @@ window.addEventListener("load", () => {
 
         
         })
-    }})
+    })
